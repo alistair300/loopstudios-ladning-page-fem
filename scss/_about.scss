@@ -1,0 +1,71 @@
+.about {
+  margin: 6rem 0;
+  position: relative;
+  max-width: 1024px;
+  margin: 0 auto;
+
+  .container {
+    @media (min-width: 768px) and (max-width: 1023px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+    }
+  }
+
+  &__image {
+    background-image: url('/images/mobile/image-interactive.jpg');
+    width: 100%;
+    height: 255px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1 1 0px;
+
+    @media (min-width: 1024px) {
+      background-image: url('/images/desktop/image-interactive.jpg');
+      height: 500px;
+      width: 600px;
+    }
+  }
+
+  &__content {
+    margin-top: 3rem;
+    text-align: center;
+    background-color: $white;
+    flex: 1 1 0px;
+
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+
+    @media (min-width: 1024px) {
+      position: absolute;
+      bottom: -50px;
+      right: 0;
+      margin: 0;
+      width: 625px;
+      padding: 5.625rem;
+    }
+  }
+
+  &__title {
+    font-size: 2.1875rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+
+    @media (min-width: 1024pz) {
+      font-size: 3rem;
+    }
+  }
+
+  &__desc {
+    font-size: 1.0625rem;
+    color: $dark-gray;
+    line-height: 1.5;
+
+    @media (min-width: 1024px) {
+      font-size: 1rem;
+    }
+  }
+}

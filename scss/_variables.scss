@@ -1,0 +1,16 @@
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$dark-gray: hsl(0, 0%, 55%);
+$very-dark-gray: hsl(0, 0%, 41%);
+
+@keyframes fadeInRight {
+  0% {
+    left: 50%;
+    opacity: 0;
+  }
+
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
