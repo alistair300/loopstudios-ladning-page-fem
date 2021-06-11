@@ -7,3 +7,4 @@ navToggler.addEventListener('click', () => {
     links.classList.toggle('open');
     navToggler.classList.toggle('open');
 });
+
